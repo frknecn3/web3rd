@@ -1,0 +1,121 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-bottom: 3px solid white;
+  height: 10vh;
+}
+
+header .logo {
+  font-size: 20px;
+  font-weight: bolder;
+  text-shadow: 0px 5px 10px rgb(166, 71, 255);
+  /* * 4 values => 
+  1. horizontal sway 
+  2. vertical sway 
+  3. blur 
+  4. color of shadow
+  */
+}
+
+header nav {
+  display: flex;
+  gap: 15px;
+}
+
+header nav .link {
+  background-color: transparent;
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+  border: none;
+  outline: none;
+  word-spacing: -2px;
+  cursor: pointer;
+  transition: all .3s;
+  border-bottom: 0px solid blueviolet;
+}
+
+header nav .link:hover {
+  color: blueviolet;
+}
+
+/* find the link with the class of active(the link i'm currently on) */
+header nav .link.active {
+  border-bottom-width: 3px;
+}
+
+.full-height {
+  min-height: 80vh;
+}
+
+.user-link{
+  display: block;
+  color: white;
+  margin: 10px 0;
+}
+
+
+.user-wrapper{
+  display: flex;
+  padding: 10px;
+}
+
+.user-details{
+  border: 2px solid rgba(255, 255, 255, 0.649);
+  padding: 10px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.user-details img{
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.user-details .detail h3:last-child{
+  color: rgba(220, 220, 220, 0.425);
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.user-description{
+  border: 2px solid rgb(255, 255, 255);
+  flex: 2;
+  padding: 20px;
+  line-height: 1.65;
+  font-weight: lighter;
+  word-spacing: 3px;
+}
+
+
+
+
+
+
+
+
+
+footer {
+  height: 5vh;
+}

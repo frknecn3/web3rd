@@ -1,0 +1,84 @@
+{
+    "users": [
+        {
+            "id": "b7f5e4a2-9a13-4e6b-8c71-32d8b36a5f20",
+            "username": "frknecn3",
+            "location": "Istanbul, TR",
+            "awards": 12,
+            "description": "Full-stack developer passionate about React and Node.js. Loves solving complex UI problems with clean code."
+        },
+        {
+            "id": "a3e0c9f1-2b49-4415-83ce-f932f31c94d2",
+            "username": "anelakaraoglan",
+            "location": "Switzerland",
+            "awards": 20,
+            "description": "Senior software engineer with a focus on AI and data analytics. Enjoys building scalable backend systems."
+        },
+        {
+            "id": "5f8d3e7b-8a1c-4d60-9a02-1deed3a743e0",
+            "username": "ahmeterkal",
+            "location": "Ankara, TR",
+            "awards": 3,
+            "description": "Junior frontend developer exploring TypeScript and modern UI frameworks. Always eager to learn."
+        },
+        {
+            "id": "dc2bfa0e-4692-4b3c-bb67-31dcfca4e2c3",
+            "username": "ayse_dev",
+            "location": "Ankara, TR",
+            "awards": 8,
+            "description": "Mobile app developer working with Flutter and SwiftUI. Blends design and functionality seamlessly."
+        },
+        {
+            "id": "6c1a9b17-5938-43a7-bc2e-3b7bdf75b2b8",
+            "username": "mertcode",
+            "location": "Izmir, TR",
+            "awards": 15,
+            "description": "Creative web developer focused on performance and UX. Loves experimenting with new technologies."
+        },
+        {
+            "id": "0d9c8f4b-44de-4ac1-8452-dc2e3d807fcb",
+            "username": "eliftech",
+            "location": "Bursa, TR",
+            "awards": 10,
+            "description": "Software engineer with a background in cloud infrastructure and DevOps automation."
+        },
+        {
+            "id": "3ad72c54-27af-4a1c-9b69-ef53069ec1cc",
+            "username": "canerjs",
+            "location": "Stockholm, SE",
+            "awards": 13,
+            "description": "React and Node.js specialist building modern web applications with clean architecture."
+        },
+        {
+            "id": "fc1d23ba-8b6f-4e32-8c69-82b55633a7b3",
+            "username": "zeynep_ai",
+            "location": "Berlin, DE",
+            "awards": 11,
+            "description": "AI researcher and Python developer passionate about NLP and ethical machine learning."
+        },
+        {
+            "id": "8b68e77c-9932-41f2-aec8-7f4e0e86e8ff",
+            "username": "ahmetui",
+            "location": "Adana, TR",
+            "awards": 9,
+            "description": "UI/UX designer turned frontend developer. Focused on creating smooth digital experiences."
+        },
+        {
+            "id": "f9a3b20e-c17a-4ab4-922b-6d5f4b6027b4",
+            "username": "sinemcodes",
+            "location": "Antalya, TR",
+            "awards": 7,
+            "description": "Freelance web designer and developer specializing in responsive, accessible websites."
+        },
+        {
+            "id": "eb4dfd97-6a90-4890-b44c-74fd1cb40b6a",
+            "username": "emrecpp",
+            "location": "London, UK",
+            "awards": 14,
+            "description": "C++ and Rust developer with a passion for systems programming and high-performance computing."
+        }
+    ],
+    "products":[
+        
+    ]
+}

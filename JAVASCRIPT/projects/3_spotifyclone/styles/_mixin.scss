@@ -1,0 +1,34 @@
+// ^ Mixins => "Mixin" stands for code-functions that will run only when certain criteria is met
+
+// let's create a mixin that'll regulate how things will look on small devices
+@mixin sm {
+    // * This is the condition for it to run
+    @media (max-width: 650px) {
+        // ^ this is the code we want to run
+        @content;
+    }
+}
+
+@mixin md {
+    @media (max-width: 768px){
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (max-width: 992px){
+        @content;
+    }
+}
+
+@mixin xl {
+    @media (max-width:1200px){
+        @content;
+    }
+}
+
+@mixin xxl{
+    @media (max-width: 1400px){
+        @content;
+    }
+}
