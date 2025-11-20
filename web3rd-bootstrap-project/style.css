@@ -1,0 +1,40 @@
+/* slider carousel images */
+.w-100-height{
+    height: 90vh;
+    width: 100%;
+}
+
+/* ONLY changes the nav-links that are INSIDE the navbar */
+
+.carousel-inner::after{
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+}
+
+
+.carousel-caption{
+    margin-bottom: 200px;
+}
+
+
+#companies{
+    background-color: #212529;
+    color: #b5b5b5;
+    margin-top: -120px;
+}
+
+.ceo-row{
+    margin-top: 20%;
+}
+
+.card-image{
+    height: 270px;
+    width: 100%;
+    object-fit: cover; 
+    /* don't try to fit the container, keep your original quality*/
+}

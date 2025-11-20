@@ -1,0 +1,52 @@
+// import the variables to use them
+@import './variables';
+@import './mixin';
+
+aside{
+    background-color: $grayColor;
+    padding: 20px;
+    border-radius: 10px;
+
+    // include => keyword to use mixin
+    span{
+        @include lg{
+            display: none;
+        }
+    }
+
+    figure{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        img{
+            width: 40px;
+        }
+    }
+
+    // nav
+    nav{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        gap: 30px;
+        a{
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            transition: all 0.3s;
+            &:hover{
+                background-color: $greenColor;
+                color: $blackColor;
+            }
+
+            i{
+                @include lg{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="">
+
+    <header>
+        <div class="header-left">
+            <img src="http://picsum.photos/100" alt="">
+            <h1>Logo</h1>
+        </div>
+
+        <input type="search">
+
+        <div class="header-right">
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="first-main">
+        <div class="welcome-wrapper">
+            <h1>Welcome to our webpage!</h1>
+            <p>
+                We develop the future solutions for all your software needs Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Possimus, a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, ipsum?
+            </p>
+            <div class="buttons">
+                <button class="btn">Embrace The Change</button>
+                <button class="btn btn-alt" id="learn">Learn More</button>
+            </div>
+        </div>
+    </main>
+
+    <main>
+        <div class="welcome-wrapper">
+            <h1>Let's do the calculation</h1>
+            <p>
+                You can calculate how much you will have to pay for the services by using the controls below.
+            </p>
+
+            <div class="calculation-wrapper">
+
+                <div class="left-right">
+                    <div class="left">
+                        <label for="">Amount of money</label>
+                        <input type="number" id="moneyInput">
+                        <select name="currency" id="currency">
+                            <option value="1">USD</option>
+                            <option value="1.2">CHF</option>
+                            <option value="0.025">TRY</option>
+                        </select>
+                    </div>
+
+                    <div class="right">
+                        <label for="">Result</label>
+                        <input type="number" disabled id="resultInput">
+                    </div>
+                </div>
+
+                <button>Calculate</button>
+
+            </div>
+        </div>
+    </main>
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

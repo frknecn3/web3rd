@@ -1,0 +1,152 @@
+main {
+    background-color: $grayColor;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    overflow-y: auto;
+
+    // Header
+    header {
+        background-color: $blackColor;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        gap: 20px;
+        border-radius: 10px;
+    }
+
+    // form
+    form {
+        display: flex;
+        width: 100%;
+        box-shadow: 0 0 8px;
+        max-width: 350px;
+        border-radius: 5px;
+
+        @include md {
+            // unset is a keyword to remove all previous rules
+            max-width: unset;
+        }
+
+        input {
+            background-color: transparent;
+            padding: 15px;
+            width: 100%;
+            color: $textColor;
+        }
+
+        button {
+            background: none;
+            color: $textColor;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+    }
+
+    // nav
+    nav {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        @include md {
+            display: none;
+        }
+
+        a {
+            font-size: 14px;
+            cursor: pointer;
+            transition: all .3s;
+
+            &:hover {
+                color: white;
+            }
+        }
+    }
+}
+
+//Section
+section {
+    margin-top: 20px;
+
+    // TODO music cards and grid
+    #music-list {
+        position: relative;
+        min-height: 100px;
+        margin-top: 25px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+
+        .card {
+            background-color: #121212;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            border-radius: 10px;
+            height: fit-content;
+            cursor: pointer;
+
+            figure {
+                position: relative;
+
+                img {
+                    width: 100%;
+                    border-radius: 10px;
+                }
+
+                .play {
+                    position: absolute;
+                    right: 10px;
+                    bottom: 0;
+                    opacity: 0;
+                    background-color: $greenColor;
+                    width: 40px;
+                    height: 40px;
+                    display: grid;
+                    place-items: center;
+                    border-radius: 50%;
+                    font-size: 23px;
+                    transition: all 0.3s;
+
+                    &:hover {
+                        rotate: 360deg;
+                        scale: 1.1;
+                        background-color: #0f6d32;
+                        color: white;
+                    }
+
+                    i{
+                        // * This makes sure that when we click on this element, it has no functionality and our click passes onto its container instead
+                        pointer-events: none;
+                    }
+                }
+            }
+
+            &:hover .play {
+                opacity: 1;
+                bottom: 20px;
+            }
+
+            .card-info {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                overflow: hidden;
+                white-space: nowrap;
+                .subtitle {
+                    color: rgb(137, 137, 137);
+                    font-weight: 400;
+                }
+            }
+
+        }
+
+
+    }
+}

@@ -1,0 +1,55 @@
+@import './variables';
+
+.model {
+    &-content {
+        position: relative;
+        justify-self: center;
+        padding-top: 32px;
+
+        &-image {
+            width: 280px;
+
+
+        }
+    }
+
+    &-tooltip {
+        position: absolute;
+
+        &-text{
+            background: $gradient-color;
+            padding: 6px 12px;
+            border-radius: 60px;
+            color: white;
+            font-size: $small-font-size;
+            font-weight: $font-medium;
+            position: absolute;
+            white-space: nowrap;
+            transform: translateY(-15px);
+        }
+
+        &-1{
+            top: 100px;
+            left: 90px;
+        }
+
+        &-2{
+            top: 40px;
+            right: 0px;
+        }
+
+        &-3{
+            bottom: 30px;
+            left: 50px;
+        }
+
+        &-4{
+            bottom: 100px;
+            right: 20px;
+        }
+
+
+    }
+
+
+}

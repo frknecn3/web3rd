@@ -1,0 +1,28 @@
+.sponsors{
+    width: 80%;
+    margin: 0 auto;
+
+    &-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+        align-items: center;
+
+        // column-gap: 30px; this one controls horizontal gap
+
+        // this one controls vertical gap
+        row-gap: 30px;
+
+        // gap: 30px; this one controls both of them
+
+
+        img{
+            width: 150px;
+            justify-self: center;
+            transition: all .5s;
+
+            &:hover{
+                scale: 1.2;
+            }
+        }
+    }
+}

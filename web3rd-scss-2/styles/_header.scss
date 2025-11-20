@@ -1,0 +1,39 @@
+@import './variables';
+
+header{
+    padding: 20px 12.5%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: $z-fixed;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    // logo
+    .logo{
+        color: $first-color;
+        font-size: $h1-font-size;
+        font-weight: $font-semi-bold;
+    }
+    //nav list
+    .nav-list{
+        display: flex;
+        align-items: center;
+        gap: 25px;
+
+        a{
+            color: $white-color;
+            font-weight: $font-medium;
+            transition: all .4s;
+            &:hover{
+                color: $first-color;
+            }
+        }
+    }
+
+    #menu-btn{
+        display: none;
+    }
+}

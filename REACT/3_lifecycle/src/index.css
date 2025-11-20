@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(45deg,
+      rgb(177, 255, 230),
+      rgb(253, 255, 187));
+  font-family: 'Courier New', Courier, monospace;
+}
+
+header{
+  top: 0;
+  position: fixed;
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 3vh 7vw;
+  background-color: rgba(0, 0, 0, 0.049);
+  border-bottom: 1px solid rgb(202, 202, 202);
+  /* backdrop filter -> can be used to have a filter on the things behind the element */
+  backdrop-filter: blur(5px);
+}
+
+.main{
+  margin-top: 10vh;
+  height: 90vh;
+}
+
+.navbar{
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+
+.menu{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: -20vw;
+  width: 20vw;
+  height: 100vh;
+  top: 10vh;
+  border-left: 2px solid black;
+  backdrop-filter: blur(3px);
+  background-color: rgba(0, 0, 0, 0.061);
+  transition: all .5s ease;
+}
+
+.menu.visible{
+  right: 0;
+}
+
+.counter{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  width: 300px;
+  height: 200px;
+}
+
+.counter button{
+  width: 45px;
+  height: 45px;
+  font-size: 30px;
+}
+
+.counter span{
+  font-size: 30px;
+}
+
+.count-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,58 @@
+// 768px
+
+// max-width means these rules will apply UNTIL the screen size is greater than 768
+
+//min-width means these rules will apply ONLY AFTER the screen size is greater than 768
+@media (min-width: 768px) {
+    .home {
+        &-center {
+            &-image {
+                width: 320px !important;
+            }
+
+            &-title {
+                font-size: 256px !important;
+                top: -50px;
+            }
+        }
+
+        &-left {
+            span {
+                font-size: $normal-font-size !important;
+
+                &::after {
+                    width: 110px !important;
+                    left: 85px;
+                }
+            }
+
+
+            &-social {
+                margin-top: 25px;
+
+                a {
+                    font-size: 25px !important;
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+    .about {
+        &-data {
+            h2 {
+                font-size: 2rem !important;
+            }
+        }
+    }
+
+    .favorites,.model {
+        h2 {
+            font-size: 2rem !important;
+
+        }
+    }
+
+}
