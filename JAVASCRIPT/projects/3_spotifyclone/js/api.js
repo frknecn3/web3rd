@@ -9,7 +9,8 @@ class API {
                 'x-rapidapi-host': 'shazam.p.rapidapi.com'
             }
         };
-        this.baseURL = `https://shazam.p.rapidapi.com`
+        // & CHANGED
+        this.baseURL = `https://shazam.p.rapidapi.com/v2`
     }
 
     // ^ Function to get popular songs
@@ -27,11 +28,16 @@ class API {
             // * this songs data returns us our songs BUT they all hold the music data inside an unnecessary middleman called "track" so we need a transformation
 
             // return the final converted songs
-            return data.tracks.hits.map((item) => item.track)
+        // & CHANGED
+
+            console.log(data)
+            return data.results.songs.data.map((item) => item.attributes)
         }
         catch (err) {
-            alert(`ERROR: `, err);
-            console.error(err);
+        // & CHANGED
+
+            alert(`ERROR: ` + err);
+            console.error(err)
             return [];
         }
     }

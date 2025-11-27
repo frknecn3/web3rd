@@ -25,19 +25,25 @@ class UI {
             // add all the data regarding the song's singer, title, image, group name etc. everything to the HTML element
 
             console.log(song)
-
-            card.dataset.title = song.title;
-            card.dataset.subtitle = song.subtitle;
-            card.dataset.image = song.images.coverarthq;
-            card.dataset.mp3 = song.hub.actions[1].uri;
+            
+            
+            // & CHANGED
+            card.dataset.title = song.name;
+            card.dataset.subtitle = song.artistName;
+            card.dataset.image =
+                song.artwork.url
+                    .replace('{w}', "1000")
+                    .replace('{h}', '1000');
+            card.dataset.mp3 = song.previews[0].url;
 
             // define the inners of this newly created card div
             // ! Notice that we are not creating the card div again, only the inside of it
 
+            // & CHANGED
             card.innerHTML = `
                 <figure>
                     <img
-                        src="${song.images.coverarthq}"
+                        src="${card.dataset.image}"
                         alt="card-image"
                     />
                     <div class="play">
@@ -46,8 +52,8 @@ class UI {
                 </figure>
 
                 <div class="card-info">
-                    <h4>${song.title}</h4>
-                    <h4 class="subtitle">${song.subtitle}</h4>
+                    <h4>${song.name}</h4>
+                    <h4 class="subtitle">${song.artistName}</h4>
                 </div>
             `
 
